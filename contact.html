@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>小豹游戏平台|XB-GAME</title>
+  <meta name="keywords" content="小豹游戏">
+  <meta name="description" content="XB-GAME品牌致力于全球的互联网市场,深研全球市场的产品需求,为广大的全球同胞提供优秀的移动机联网产品,帮助全球的同胞更好的融入移动互联时代,拥抱移动互联时代带来的各项便利,提高生活质量。">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="renderer" content="webkit">
+  <meta name="location" content="province=;city=">
+  <link rel="shortcut icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="assets/swiper.min.css">
+  <link rel="stylesheet" href="assets/mobi.css">
+  <!--[if lt IE 9]>
+  　　　　<script src="//cdn.bootcss.com/livingston-css3-mediaqueries-js/1.0.0/css3-mediaqueries.js"></script>
+  　　<![endif]-->
+</head>
+<body>
+<div id="app">
+  <div class="body_content">
+    <header class="header">
+      <div class="content">
+        <a href="index.html" class="logo">
+          <img class="fl" src="assets/logo.png" alt="xb logo">
+          <h1>小豹游戏</h1>
+          <h2>XB-GAME</h2>
+        </a>
+        <div class="slesh">&nbsp;</div>
+        <nav>
+          <a class="link" href="index.html">
+            <div class="link">首页</div>
+          </a>
+          <a class="link" href="contact.html">
+            <div class="back"></div>
+            <div class="link">联系我们</div>
+            <span class="active"></span>
+          </a>
+          <!-- <a class="link" href="http://apk.xbigame.com/SdkV2.apk">
+            <div class="link">下载SDK</div>
+          </a> -->
+        </nav>
+      </div>
+    </header>
+  </div>
+  <main class="container" style="display: inline-block;">
+    <div class="contact">
+      <h2 class="title">联系我们</h2>
+      <div class="left">
+        <div class="icon"><img src="assets/busness.png" alt="商务拓展 ICON"></div>
+        <div class="content">
+          <h2>商务拓展</h2>
+          <div class="desc">软件推广、游戏联运、流量合作 </div>
+        </div>
+      </div>
+      <div class="right">
+        <h2>游戏联运合作</h2>
+        <div class="desc">
+              <span class="item">
+                <span class="name">AAA</span><a href="mailto:aaaa@xbigame.com">aaaa@xbigame.com</a>
+              </span>
+          <span class="name">QQ</span><a href="tencent://message/?uin=740028600&Site=&Menu=yes">740028600</a>
+        </div>
+        <div class="desc">
+              <span class="item">
+                <span class="name">BBB</span><a href="mailto:bbbb@xbigame.com">bbbb@xbigame.com</a>
+              </span>
+          <span class="name">QQ</span><a href="tencent://message/?uin=1040412590&Site=&Menu=yes">1040412590</a>
+        </div>
+        <h2>流量合作</h2>
+        <div class="desc">
+              <span class="item">
+                <span class="name">CCC</span><a href="mailto:cccc@xbigame.com">cccc@xbigame.com</a>
+              </span>
+          <span class="name">QQ</span><a href="tencent://message/?uin=1040412590&Site=&Menu=yes">1040412590</a></div>
+        <div class="desc">
+          请各位开发者同学发送邮件时，带上自家的名片、应用信息，我们的响应效率会更快哦~
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="item">健康游戏忠告: 抵制不良游戏 | 拒绝盗版游戏 | 注意自我保护 | 谨防受骗上当 | 适度游戏益脑 | 沉迷游戏伤身 | 合理安排时间 | 享受健康生活 </div>
+    <div class="item">适龄提醒：本公司游戏仅适合18岁以上玩家 | <a href="protocol.html" target="_blank">用户协议</a></div>
+    <div class="item" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010602008813" >
+        <img src="assets/batb.png" style="float:left;"/><p style="float:left;margin: 0px 0px 0px 5px;color:#19262e;">粤公网安备 44010602008813号</p>
+      </a>&nbsp;|
+      <a target="_blank" href="https://beian.miit.gov.cn/" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#19262e;">粤ICP备2021005474号-1</a>
+    </div>
+    <div class="copyright">版权所有@广州小豹信息科技有限公司. All Rights Reserved</div>
+  </footer>
+</div>
+</body>
+<script>
+  function qs(selector){
+    return document.querySelector(selector);
+  }
+  function autoFooter(){
+    qs('.container').style.minHeight= '';
+    var innerHeight = 0;
+    if(window.innerHeight){
+      innerHeight = window.innerHeight;
+    } else {
+      innerHeight = document.body.clientHeight;
+    }
+    var headerHeight = qs('.header').clientHeight;
+    var contHeight = qs('.container').clientHeight;
+    var children = qs('.container').children[0];
+
+    var children_height = children.clientHeight;
+
+    if(children_height >= contHeight){
+      contHeight = children_height + headerHeight;
+    }
+    var footerHeight = qs('.footer').clientHeight;
+    var minHeight = innerHeight - footerHeight;
+    console.log(contHeight, footerHeight, innerHeight);
+    if(contHeight + footerHeight > innerHeight){
+      qs('.container').style.minHeight= contHeight + "px";
+      qs('.footer').style.position='relative';
+      qs('.footer').style.bottom = "";
+    } else {
+      qs('.container').style.minHeight= (innerHeight - footerHeight - 32 ) + "px";
+      qs('.footer').style.position='absolute';
+      qs('.footer').style.bottom = "auto";
+    }
+  };
+  window.onresize = function(){
+    autoFooter();
+  };
+  document.body.addEventListener('resize',()=>{
+    autoFooter();
+  },true);
+  autoFooter();
+</script>
+<script src="assets/html5media.min.js"></script>
+<script src="assets/tongji.js?version=1"></script>
+</html>
